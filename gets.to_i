@@ -1,0 +1,11 @@
+puts "Demo Membaca data bertipe bilangan bulat"
+
+print "Masukan nilia a"
+a = gets.to_i
+
+print "Masukan nilai b"
+b = gets.to_i
+
+c = a*b
+
+printf"%d * %d = %d",a,b,c

@@ -1,0 +1,31 @@
+= FFiixxnnuumm  <<  IInntteeggeerr
+
+(from ruby core)
+------------------------------------------------------------------------------
+When mathn is required, Fixnum's division is enhanced to return more precise
+values from mathematical expressions.
+
+  2/3*3  # => 0
+  require 'mathn'
+  2/3*3  # => 2
+
+
+Holds Integer values that can be represented in a native machine word (minus 1
+bit).  If any operation on a Fixnum exceeds this range, the value is
+automatically converted to a Bignum.
+
+Fixnum objects have immediate value. This means that when they are assigned or
+passed as parameters, the actual object is passed, rather than a reference to
+that object.
+
+Assignment does not alias Fixnum objects. There is effectively only one Fixnum
+object instance for any given integer value, so, for example, you cannot add a
+singleton method to a Fixnum. Any attempt to add a singleton method to a
+Fixnum object will raise a TypeError.
+------------------------------------------------------------------------------
+= IInnssttaannccee  mmeetthhooddss::
+
+  %, &, *, **, +, -, -@, /, <, <<, <=, <=>, ==, ===, >, >=, >>, [], ^, abs,
+  bit_length, dclone, div, divmod, even?, fdiv, inspect, magnitude, modulo,
+  odd?, size, succ, to_f, to_s, zero?, |, ~
+

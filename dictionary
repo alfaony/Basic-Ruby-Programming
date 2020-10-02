@@ -1,0 +1,14 @@
+kamus = {
+
+	"one"=>"satu"
+	"two"=>"dua"
+}
+
+puts "Masukan Kadata dalam bahasa inggreis"
+arti = gets.strip.downcase
+
+if arti != kamus
+	puts "#{arti} yang anda cari tidak ditemukan"
+end
+else
+	puts "#{arti} #{kata}"
